@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1555418167 source:e:\school\c++\compiler\main.cpp
+	<iostream>
+	<DFA.h>
+	<LA.h>
+	<cctype>
+	<algorithm>
+	<set>
+
+1555055610 source:e:\school\c++\compiler\retonfa.cpp
+	<REtoNFA.h>
+
+1555055746 e:\school\c++\compiler\\retonfa.h
+
+1555418834 source:e:\school\c++\compiler\dfa.cpp
+	<DFA.h>
+
+1555418980 e:\school\c++\compiler\\dfa.h
+	<iostream>
+	<vector>
+	<map>
+	<set>
+	<algorithm>
+	<cctype>
+
+1555329107 source:e:\school\c++\compiler\la.cpp
+	<LA.h>
+
+1555313027 e:\school\c++\compiler\\la.h
+	<DFA.h>
+	<vector>
+	<string>
+	<map>
+	<cstdlib>
+

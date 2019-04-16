@@ -1,0 +1,13 @@
+int find(int n)
+{
+    /*
+    Ñ°ÕÒ¸¸½Úµã
+    */
+	if(x[n]!=n)
+	{
+		return x[n]=find(x[n]);
+	}
+	float a1=3.14159;
+	int _a=1;
+	return n;
+}

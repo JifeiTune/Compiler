@@ -1,0 +1,8 @@
+7
+else if int return void while double
+
+19
++  -  *  /  <  <=  >  >=  ==  !=  = ; ,  (  ) [  ] {  }
+
+11
++  -  *  ; ,  (  ) [  ] {  }
