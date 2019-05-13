@@ -1,0 +1,95 @@
+Program
+|---Fun declaration
+|   |---Type Specifier: int
+|   |---Identifier: pow
+|   |---Param List
+|   |   |---Normal Param
+|   |   |   |---Type Specifier: int
+|   |   |   |---Identifier: a
+|   |   |   
+|   |   |---Normal Param
+|   |   |   |---Type Specifier: int
+|   |   |   |---Identifier: b
+|   |   
+|   |---Compound Statement
+|   |   |---Var declaration
+|   |   |   |---Type Specifier: int
+|   |   |   |---Identifier: temp
+|   |   |   
+|   |   |---Assignment
+|   |   |   |---Identifier: temp
+|   |   |   |---Identifier: a
+|   |   |   
+|   |   |---While Statement
+|   |   |   |---Operator: >
+|   |   |   |   |---Identifier: b
+|   |   |   |   |---Integer: 0
+|   |   |   |   
+|   |   |   |---Compound Statement
+|   |   |   |   |---Assignment
+|   |   |   |   |   |---Identifier: a
+|   |   |   |   |   |---Operator: *
+|   |   |   |   |   |   |---Identifier: a
+|   |   |   |   |   |   |---Identifier: temp
+|   |   |   |   |   
+|   |   |   |   |---Assignment
+|   |   |   |   |   |---Identifier: b
+|   |   |   |   |   |---Operator: -
+|   |   |   |   |   |   |---Identifier: b
+|   |   |   |   |   |   |---Integer: 1
+|   |   |   
+|   |   |---Return Statement
+|   |   |   |---Identifier: a
+|   
+|---Fun declaration
+|   |---Type Specifier: int
+|   |---Identifier: main
+|   |---Void Param
+|   |---Compound Statement
+|   |   |---Var declaration
+|   |   |   |---Type Specifier: int
+|   |   |   |---Identifier: a
+|   |   |   
+|   |   |---Var declaration
+|   |   |   |---Type Specifier: int
+|   |   |   |---Identifier: b
+|   |   |   
+|   |   |---While Statement
+|   |   |   |---Integer: 1
+|   |   |   |---Compound Statement
+|   |   |   |   |---Assignment
+|   |   |   |   |   |---Identifier: a
+|   |   |   |   |   |---Call
+|   |   |   |   |   |   |---Identifier: read
+|   |   |   |   |   |   |---Arg List
+|   |   |   |   |   
+|   |   |   |   |---Assignment
+|   |   |   |   |   |---Identifier: b
+|   |   |   |   |   |---Call
+|   |   |   |   |   |   |---Identifier: read
+|   |   |   |   |   |   |---Arg List
+|   |   |   |   |   
+|   |   |   |   |---If Statement
+|   |   |   |   |   |---Operator: >
+|   |   |   |   |   |   |---Call
+|   |   |   |   |   |   |   |---Identifier: pow
+|   |   |   |   |   |   |   |---Arg List
+|   |   |   |   |   |   |   |   |---Identifier: a
+|   |   |   |   |   |   |   |   |---Identifier: b
+|   |   |   |   |   |   |   
+|   |   |   |   |   |   |---Integer: 10000
+|   |   |   |   |   |   
+|   |   |   |   |   |---Compound Statement
+|   |   |   |   |   |   |---Call
+|   |   |   |   |   |   |   |---Identifier: out
+|   |   |   |   |   |   |   |---Arg List
+|   |   |   |   |   |   |   |   |---Integer: 1
+|   |   |   |   |   |   
+|   |   |   |   |   |---Compound Statement
+|   |   |   |   |   |   |---Call
+|   |   |   |   |   |   |   |---Identifier: cout
+|   |   |   |   |   |   |   |---Arg List
+|   |   |   |   |   |   |   |   |---Integer: 2
+|   |   |   
+|   |   |---Return Statement
+|   |   |   |---Integer: 0

@@ -1,35 +1,49 @@
 # depslib dependency file v1.0
-1555418167 source:e:\school\c++\compiler\main.cpp
+1557672994 source:e:\school\c++\compiler\main.cpp
 	<iostream>
-	<DFA.h>
-	<LA.h>
 	<cctype>
 	<algorithm>
 	<set>
+	<Parse.h>
 
 1555055610 source:e:\school\c++\compiler\retonfa.cpp
 	<REtoNFA.h>
 
 1555055746 e:\school\c++\compiler\\retonfa.h
 
-1555418834 source:e:\school\c++\compiler\dfa.cpp
+1557047907 source:e:\school\c++\compiler\dfa.cpp
 	<DFA.h>
 
-1555418980 e:\school\c++\compiler\\dfa.h
+1557220775 e:\school\c++\compiler\\dfa.h
 	<iostream>
 	<vector>
 	<map>
 	<set>
 	<algorithm>
 	<cctype>
+	<Globle.h>
 
-1555329107 source:e:\school\c++\compiler\la.cpp
+1557124909 source:e:\school\c++\compiler\la.cpp
 	<LA.h>
 
-1555313027 e:\school\c++\compiler\\la.h
+1557125587 e:\school\c++\compiler\\la.h
 	<DFA.h>
 	<vector>
 	<string>
 	<map>
 	<cstdlib>
+
+1557047483 e:\school\c++\compiler\\globle.h
+	<vector>
+	<map>
+
+1557730499 e:\school\c++\compiler\\parse.h
+	<iostream>
+	<cctype>
+	<algorithm>
+	<vector>
+	<LA.h>
+
+1557747885 source:e:\school\c++\compiler\parse.cpp
+	<Parse.h>
 

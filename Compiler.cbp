@@ -38,6 +38,8 @@
 		<Unit filename="DFA.h" />
 		<Unit filename="LA.cpp" />
 		<Unit filename="LA.h" />
+		<Unit filename="Parse.cpp" />
+		<Unit filename="Parse.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

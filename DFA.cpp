@@ -1,7 +1,7 @@
 #include<DFA.h>
 
 DFA::DFA() {
-	name=vector<Type>(17,Error);
+	name=vector<TokenType>(17,Error);
 	name[1]=Identifier;//统一处理，还需查表判断是保留字还是普通标识符
 	name[2]=Integer;
 	name[3]=Float;
@@ -120,6 +120,6 @@ int DFA::Trans(int state,char c) {
 	}
 }
 
-Type DFA::getType(int state) { //获取某个状态类型
+TokenType DFA::getType(int state) { //获取某个状态类型
 	return name[state];
 }

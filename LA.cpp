@@ -1,5 +1,102 @@
 #include<LA.h>
 
+vector<string> RW;//保留字表
+vector<string> SS;//特殊符号表
+vector<string> ID;//标识符表
+vector<int> Integers;//整数表
+vector<double> Floats;//浮点数表
+
+//每种类型的值在各种符号表中的下标，判断存在与去重，避免线性查找
+map<string,int> RWmp;
+map<string,int> SSmp;
+map<string,int> IDmp;
+map<int,int> Imp;
+map<double,int> Fmp;
+
+
+
+void Token::printType()
+{
+    switch(type)
+    {
+    case Identifier:
+        {
+            cout<<"Identifier";
+            break;
+        }
+    case Reserved_Word:
+        {
+            cout<<"Reserved_Word";
+            break;
+        }
+    case Special_Symbol:
+        {
+            cout<<"Special_Symbol";
+            break;
+        }
+    case Integer:
+        {
+            cout<<"Integer";
+            break;
+        }
+    case Float:
+        {
+            cout<<"Float";
+            break;
+        }
+    case Note://实际使用时应该忽略
+        {
+            cout<<"Note";
+        }
+    }
+}
+
+void Token::printVal()
+{
+    switch(type)
+    {
+    case Identifier:
+        {
+            cout<<ID[p];
+            break;
+        }
+    case Reserved_Word:
+        {
+            cout<<RW[p];
+            break;
+        }
+    case Special_Symbol:
+        {
+            cout<<SS[p];
+            break;
+        }
+    case Integer:
+        {
+            cout<<Integers[p];
+            break;
+        }
+    case Float:
+        {
+            cout<<Floats[p];
+            break;
+        }
+    }
+}
+
+void Token::printToken()
+{
+    cout<<"line"<<line<<' ';
+    printType();
+    cout<<": ";
+    printVal();
+    cout<<'\n';
+}
+
+LA::LA()
+{
+
+}
+
 LA::LA(string fileName)
 {
     this->fileName=fileName;
@@ -41,6 +138,8 @@ LA::LA(string fileName)
     p=0;
     line=1;
     freopen("CON","r",stdin);//恢复重定向
+    cin.clear();
+	cin.sync();
 }
 
 Token LA::getNextToken()//允许预读到\0
@@ -59,7 +158,7 @@ Token LA::getNextToken()//允许预读到\0
         throw ans;
     }
     int state=0,to;
-    Type tp;
+    TokenType tp;
     string ans="";
     int pos;
     while(p<=len)
@@ -148,3 +247,5 @@ Token LA::getNextToken()//允许预读到\0
         ++p;
     }
 }
+
+
